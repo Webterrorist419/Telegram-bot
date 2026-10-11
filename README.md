@@ -11,28 +11,15 @@ A small, brand-neutral Telegram bot written in Rust, with an SQLite database. Th
 
 The installer installs the required system packages and Rust toolchain, builds the bot, creates a systemd service, and opens the administration menu.
 
-## Install from a cloned repository
+## One-command installation
 
-Clone the repository, then run the installer from the project directory:
+Run this single command on an Ubuntu or Debian server. It downloads and starts the installer, which fetches this repository, installs the dependencies, builds the bot, and opens the setup menu:
 
 ```bash
-git clone https://github.com/Webterrorist419/Telegram-bot.git
-cd Telegram-bot
-sudo bash install.sh
+sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/Webterrorist419/Telegram-bot/main/install.sh -o /tmp/simple-telegram-bot-install.sh && BOT_REPO_URL=https://github.com/Webterrorist419/Telegram-bot.git bash /tmp/simple-telegram-bot-install.sh --install'
 ```
-
-If the project is already on the server, run `sudo bash install.sh` from its directory instead.
 
 Choose Russian or English when prompted. Enter the bot token and administrator Telegram ID when requested. Token input is deliberately visible while typing. At the end, the installer starts the bot and opens `bot-admin`.
-
-## Install using the remote installer
-
-The installer can also be downloaded and run directly. It asks for the GitHub repository URL if one was not provided:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Webterrorist419/Telegram-bot/main/install.sh -o /tmp/bot-admin
-sudo bash /tmp/bot-admin
-```
 
 ## Administration
 
