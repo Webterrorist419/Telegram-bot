@@ -1,0 +1,16 @@
+[package]
+name = "simple-telegram-bot"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "simple-telegram-bot"
+path = "bot.rs"
+
+[dependencies]
+dotenvy = "0.15"
+rusqlite = { version = "0.38", features = ["bundled"] }
+teloxide = { version = "0.17", default-features = false, features = ["rustls", "ctrlc_handler"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+url = "2"
+
