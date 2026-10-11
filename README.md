@@ -16,12 +16,12 @@ The installer installs the required system packages and Rust toolchain, builds t
 Clone the repository, then run the installer from the project directory:
 
 ```bash
-git clone https://github.com/OWNER/REPOSITORY.git
-cd REPOSITORY
+git clone https://github.com/Webterrorist419/Telegram-bot.git
+cd Telegram-bot
 sudo bash install.sh
 ```
 
-Replace `OWNER/REPOSITORY` with the repository path. If the project is already on the server, run `sudo bash install.sh` from its directory instead.
+If the project is already on the server, run `sudo bash install.sh` from its directory instead.
 
 Choose Russian or English when prompted. Enter the bot token and administrator Telegram ID when requested. Token input is deliberately visible while typing. At the end, the installer starts the bot and opens `bot-admin`.
 
@@ -30,7 +30,7 @@ Choose Russian or English when prompted. Enter the bot token and administrator T
 The installer can also be downloaded and run directly. It asks for the GitHub repository URL if one was not provided:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/OWNER/REPOSITORY/main/install.sh -o /tmp/bot-admin
+curl -fsSL https://raw.githubusercontent.com/Webterrorist419/Telegram-bot/main/install.sh -o /tmp/bot-admin
 sudo bash /tmp/bot-admin
 ```
 
